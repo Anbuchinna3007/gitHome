@@ -1,7 +1,0 @@
-<aura:component>
-     <aura:attribute name="name" type="String" default="Anbu"/>
-     {!v.name}
-    <lightning inputfield label="Name Field" type="String">
-        
-    </lightning> 
-</aura:component>	
