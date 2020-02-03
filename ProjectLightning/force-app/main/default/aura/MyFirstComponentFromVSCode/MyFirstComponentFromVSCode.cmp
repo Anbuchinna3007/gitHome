@@ -1,3 +1,8 @@
-<aura:component implements ="flexipage:AvailableForAllPageTypes, force:hasrecordId" access="global">
-     <h1>Hi, This is lightning component</h1>
-</aura:component>	
+<aura:component implements ="flexipage:AvailableForAllPageTypes,forceCommunity:AvailableForAllPageTypes,flexipage:AvailableForRecordHome,force:hasrecordId,force:appHostable,force:lightningQuickAction">
+    <div class="slds-var-p-around_small	">
+        <h1 class="red">hello World!</h1>
+        <p class="yellow">this is para</p>
+        <div style="background-color:black">this is div</div>
+        <span>this is span</span>
+    </div>
+</aura:component>

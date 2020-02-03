@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="WholeNumber" type="Integer" access="public" />
+    <aura:attribute name="Percentage" type="Integer" access="public" />
+    <aura:attribute name="truthy" type="Boolean" access="public" default ="false"/>
+     <lightning:card title="Calculator" iconName="standard:metrics">
+        <div class="slds-p-around_xx-small">
+    	<lightning:input name="number1" type="number" label = "Enter a Number" value="{!v.WholeNumber}"/>
+            <lightning:input name="number2" type="number" label = "Enter a Percentage" value="{!v.Percentage}" formatter="percent-fixed"/><br/>
+        <lightning:button variant="brand" label="Calculate" value= "{!this}" onclick="{! c.handleClick }" /><br/><br/>
+            <div class="slds-p-around_x-small" style="font-size:20px;">
+            <aura:renderIf isTrue="{!v.truthy}">
+                Result:&nbsp;{!v.Percentage}% of {!v.WholeNumber} is {!div(mult(v.WholeNumber,v.Percentage),100)}
+            </aura:renderIf>
+			</div>
+       </div>
+    </lightning:card>
+</aura:component>

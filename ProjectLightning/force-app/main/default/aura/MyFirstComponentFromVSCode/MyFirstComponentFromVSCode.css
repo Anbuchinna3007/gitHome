@@ -1,2 +1,14 @@
 .THIS {
+    background-color:red;
+    font-size:30px;
+    
+}
+
+.THIS .red{
+    color:green;
+}
+
+.THIS .yellow{
+    color:yellow;
+    
 }
