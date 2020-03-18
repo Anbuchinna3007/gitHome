@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:AvailableForAllPageTypes">
+
+<aura:attribute name="names" type="List" default="['Anbu', 'Venkat', 'Ravi', 'Harish', 'Prudhuvi', 'SakthiVel', 'Kiran', 'Poojith', 'Raman', 'Bala']"/>
+         <div class="slds-p-horizontal_large" style="background:Red; color:blue">
+            
+            <aura:iteration items="{!v.names}" var="nam" indexVar="index">
+				<li>
+                        {!index} {!nam}
+                </li>
+
+        	</aura:iteration>
+		</div>
+</aura:component>

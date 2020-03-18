@@ -1,0 +1,5 @@
+<aura:component implements ="flexipage:AvailableforAllPageTypes,force:hasRecordId">
+<aura:attribute name="title" type="String" default="This is Vendor"/>
+<aura:input name="titleName" type="String" vaue="{!v.title}"/>
+
+</aura:component>	

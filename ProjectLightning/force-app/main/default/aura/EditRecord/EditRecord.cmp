@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:AvailableForAllPageTypes,flexipage:AvailableForRecordHome, force:appHostable, force:hasRecordId, force:hasSObjectName ">
+<aura:handler value="{!this}" action="{!c.init}" name="init"/>
+</aura:component>	

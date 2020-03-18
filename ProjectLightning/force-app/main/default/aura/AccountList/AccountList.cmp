@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:AvailableForAllPageTypes" controller="AccountListController">
+    <aura:attribute name="accounts" type="Account[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <table>
+        <tr>
+            <td>Account Name</td>
+        </tr>
+
+        <aura:iteration items="{!v.accounts}" var="acc">
+           <tr>
+               <td>
+                {!acc.Name}
+               </td>
+           </tr>
+        </aura:iteration>
+
+    </table>
+
+       
+</aura:component>
